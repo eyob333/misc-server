@@ -98,14 +98,7 @@ app.post('/api/msc', async (req, res) => {
     res.status(201).json({
       success: true,
       message: 'Post saved to msc table and notification email sent successfully.',
-      data: {
-        id: post.id,
-        name: post.name,
-        sender: post.sender,
-        content: post.content,
-        created_at_utc: isoUtcTimestamp,
-        created_at_local: localTimestamp
-      }
+      data: {}
     });
 
   } catch (error) {
